@@ -1,0 +1,68 @@
+* {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: $main_text_color;
+}
+
+h1 {
+    margin-top: 14vh;
+    font-family: 'Yeseva One';
+    font-size: 80px;
+    color: $header_text_color;
+    display: flex;
+    justify-content: center;
+    line-height: 91.49%; 
+    letter-spacing: 5px;
+    transition: 0.3s;
+
+    @media (max-width: 760px) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+    .contrast {
+        font-family: Helvetica, sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 200;
+        color: $header_text_color;
+        line-height: 50px;
+        margin-left: 32px;
+        margin-top: 14px;
+        letter-spacing: 5px;
+
+        @media (max-width: 760px) {
+            margin-left: 0;
+        }
+    }
+}
+
+
+
+.nav-link {
+    color: $header_text_color;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.genre-filter {
+    color: $headline_second_color;
+    font-family: 'Yeseva One';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.genre-filter--active,  .genre-filter:hover{
+    color: $headline_text_color;
+    border-bottom: 3px solid $headline_text_color;
+}
